@@ -1,0 +1,9 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node -e \"require('fs').writeFileSync('build-info.txt', 'built in backend')\"",
+    "start": "node server.js"
+  }
+}
