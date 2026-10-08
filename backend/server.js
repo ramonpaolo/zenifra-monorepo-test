@@ -7,5 +7,5 @@ const port = Number(process.env.PORT) || 3000
 http.createServer((req, res) => {
   console.log(`${req.method} ${req.url}`)
   res.writeHead(200, { 'content-type': 'text/plain' })
-  res.end(`backend:ok (${buildInfo})\n`)
+  res.end(`backend:ok v2 (${buildInfo})\n`)
 }).listen(port, () => console.log(`backend listening on ${port}`))
